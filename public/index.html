@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light  bg-warning">
+    <nav class="navbar navbar-light  bg-danger">
         <a class="navbar-brand mx-auto" href="/">CHAT EN VIVO</a>
 
     </nav>
@@ -20,7 +20,7 @@
 
     <div>
         <div class="row justify-content-center">
-            <div class="col-md-8 mt-4 bg-white">
+            <div class="col-md-8 mt-4 bg-white border shadow-lg">
                 <div class="card-header bg-white">
                     <h4>Let's chat</h4>
                     <form id="name-form">
@@ -28,16 +28,24 @@
                         <input type="text" id="name">
                     </form>
                 </div>
-                <div class="bg-white mt-4" style="height: calc(100vh - 300px); overflow-y: auto;">
-                    <div id="chat" class="card-body border">
-                 
+                <div class="bg-white mt-4 position-relative" style="height: calc(100vh - 300px); overflow-y: auto;">
+                    <div class="position-absolute top-0 start-0 w-100 h-100" style="background-image: url('https://wallpapers-clan.com/wp-content/uploads/2023/10/naruto-itachi-uchiha-with-red-eyes-desktop-wallpaper-preview.jpg'); background-size: cover; background-position: center;">
+                        <div  class="card-body">
+                            <div class="message-container">
+                                <!-- Ejemplo de mensaje -->
+                                <div class="message bg-primary-subtle rounded-4 p-2 mx-4 mt-4 mb-2 " id="chat" style="max-width: fit-content;">
+                                    Este es un mensaje de ejemplo
+                                </div>
+                                <!-- Fin del ejemplo -->
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <form id="message-form" class="card-footer">
                     <div class="input-group">
                         <input type="text" class="form-control" id="message">
                         <div class="input-group-append">
-                            <input type="submit" class="btn btn-warning">
+                            <input type="submit" class="btn btn-danger">
                         </div>
                     </div>
                 </form>
