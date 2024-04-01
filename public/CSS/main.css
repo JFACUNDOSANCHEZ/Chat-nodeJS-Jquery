@@ -3,20 +3,39 @@ body {
 }
 
 #chat {
+    margin-top: 1rem;
     background-color: rgba(137, 130, 130, 0.741);
-    height: 50rem;
-    max-height: 400px;
-    border-radius: 1rem;
-    overflow-y: auto;
-    margin-right: 2rem;
-   
-    /* Habilita el desplazamiento vertical cuando el contenido excede la altura máxima */
+    height: 80vh; /* 80% de la altura de la ventana del navegador */
+    max-height: 72vh; /* Para asegurarse de que no exceda el 80% de la altura de la ventana */
+  border-radius: 1rem;
+    overflow-y: auto; /* Habilita el desplazamiento vertical cuando el contenido excede la altura máxima */
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 
 #name-form {
     margin-top: 20px;
+    margin-left: 0rem;
+   
 }
+
+#eldiv{
+width: 95%;
+justify-content: center;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+
+#right{
+
+background-color: #94a9bd3e;
+border-radius: 2rem;
+margin-bottom: 1rem;
+}
+
 
 #name-form label {
     
@@ -25,16 +44,19 @@ body {
 }
 
 #name-form input {
+   margin-left: 1rem;
     justify-content: center;
     border-radius: 100px;
     border: 1px solid green;
     padding: 10px;
-    width: 27%;
+   width: 70%;
+    margin-top: 1rem;
 
     
 }
 
 .col {
+    
     background-color: #f8f9fa; /* Color de fondo */
     border-color: #dee2e6; /* Color del borde */
     color: #495057; /* Color del texto */
