@@ -11,41 +11,56 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body>
-    <nav class="navbar navbar-light  bg-danger">
+<body style="background-image: url(''); background-size: cover; background-position: center;">
+    <nav id="container" class="navbar navbar-light">
         <a class="navbar-brand mx-auto" href="/">CHAT EN VIVO</a>
-
+        <button id="yellow" style="width: 10px; height: 15px; background-color: yellow;"></button>
+        <button id="red" style="width: 10px; height: 15px; background-color: red;"></button>
+        <button id="green" style="width: 10px; height: 15px; background-color: green;"></button>
     </nav>
 
 
-    <div>
-        <div class="row justify-content-center">
-            <div class="col-md-8 mt-4 bg-white border shadow-lg">
-                <div class="card-header bg-white">
-                    <h4>Let's chat</h4>
-                    <form id="name-form">
-                        <span>What is your name?</span>
-                        <input type="text" id="name">
-                    </form>
+
+    <form id="name-form">
+        <div class="form-group">
+            <img src="https://elnueve-compress.s3-accelerate.amazonaws.com/files/1495560028342MSN.jpg"
+                style="height: 60px; width: 80px;" alt="">
+
+            <label for="name">What is your name?</label>
+            <input type="text" class="form-control" id="name">
+        </div>
+    </form>
+
+
+
+    <div class=" mt-4" id="div-to">
+
+        <div class="row">
+
+
+            <div class="col-md-3">
+                <p class="mb-0 fs-5 mt-4 fs-5 text-start text-gray">Lista de Conectados</p>
+                <div id="div-ul" style="height: 600px; max-height: 400px; overflow-y: auto;">
+                    <ul id="user-list" class="list-group"></ul>
                 </div>
-                <div class="bg-white mt-4 position-relative" style="height: calc(100vh - 300px); overflow-y: auto;">
-                    <div class="position-absolute top-0 start-0 w-100 h-100" style="background-image: url('https://wallpapers-clan.com/wp-content/uploads/2023/10/naruto-itachi-uchiha-with-red-eyes-desktop-wallpaper-preview.jpg'); background-size: cover; background-position: center;">
-                        <div  class="card-body">
-                            <div class="message-container">
-                                <!-- Ejemplo de mensaje -->
-                                <div class="message bg-primary-subtle rounded-4 p-2 mx-4 mt-4 mb-2 " id="chat" style="max-width: fit-content;">
-                                    Este es un mensaje de ejemplo
-                                </div>
-                                <!-- Fin del ejemplo -->
-                            </div>
-                        </div>
+            </div>
+
+
+
+            <div class="col-md-9" >
+
+                <div class="position-relative">
+                    <div class=" " id="chat">
+                        <!-- Aquí se renderizarán los mensajes -->
                     </div>
                 </div>
-                <form id="message-form" class="card-footer">
+
+
+                <form id="message-form" class="border-circle justify-content-center my-4">
                     <div class="input-group">
                         <input type="text" class="form-control" id="message">
                         <div class="input-group-append">
-                            <input type="submit" class="btn btn-danger">
+                            <input type="submit" class="btn m-2 btn-success">
                         </div>
                     </div>
                 </form>
