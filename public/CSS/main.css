@@ -3,83 +3,114 @@ body {
 }
 
 #chat {
-    margin-top: 1rem;
-    background-color: rgba(137, 130, 130, 0.741);
-    height: 80vh; /* 80% de la altura de la ventana del navegador */
-    max-height: 72vh; /* Para asegurarse de que no exceda el 80% de la altura de la ventana */
-  border-radius: 1rem;
-    overflow-y: auto; /* Habilita el desplazamiento vertical cuando el contenido excede la altura máxima */
+    margin-top: 0rem;
+    background-color: rgba(161, 154, 154, 0.414);
+    height: 80vh;
+    /* 80% de la altura de la ventana del navegador */
+    max-height: 72vh;
+    /* Para asegurarse de que no exceda el 80% de la altura de la ventana */
+    border-radius: 0rem;
+    overflow-y: auto;
+    /* Habilita el desplazamiento vertical cuando el contenido excede la altura máxima */
     margin-right: 1rem;
     margin-left: 1rem;
 }
 
+#medio {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: end;
+
+    margin-right: 5rem;
+
+}
+
+input::placeholder {
+    color: #c2bfbf;
+    /* Color del texto del placeholder */
+    font-style: italic;
+    /* Estilo de la fuente del placeholder */
+    opacity: 0.5;
+    /* Opacidad del placeholder */
+}
+
+#name {
+    place-content: #f8f9fa;
+}
 
 #name-form {
     margin-top: 20px;
     margin-left: 0rem;
-   
-}
-
-#eldiv{
-width: 95%;
-justify-content: center;
-margin-left: auto;
-margin-right: auto;
 
 }
 
+#eldiv {
+    width: 95%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 
-#right{
+}
 
-background-color: #94a9bd3e;
-border-radius: 2rem;
-margin-bottom: 1rem;
+
+#right {
+    margin-top: 2rem;
+
+    border-radius: 2rem;
+    margin-bottom: 1rem;
 }
 
 
 #name-form label {
-    
+
     font-size: 18px;
     color: #333;
 }
 
 #name-form input {
-   margin-left: 1rem;
+    margin-left: 0rem;
     justify-content: center;
-    border-radius: 100px;
+    border-radius: 10px;
     border: 1px solid green;
-    padding: 10px;
-   width: 70%;
+
+    background-color: rgba(182, 176, 176, 0.337);
+    width: 85%;
     margin-top: 1rem;
 
-    
+
 }
 
 .col {
-    
-    background-color: #f8f9fa; /* Color de fondo */
-    border-color: #dee2e6; /* Color del borde */
-    color: #495057; /* Color del texto */
-    padding: 10px; /* Espaciado interno */
-    margin-bottom: 2px; /* Margen inferior */
+
+    background-color: #f8f9fa;
+    /* Color de fondo */
+    border-color: #dee2e6;
+    /* Color del borde */
+    color: #495057;
+    /* Color del texto */
+    padding: 10px;
+    /* Espaciado interno */
+    margin-bottom: 2px;
+    /* Margen inferior */
 }
+
 #container {
     background: green;
 
-
 }
+
 
 #div-to {
     margin-left: 1rem;
-   }
+}
 
 #div-ul {
 
     margin-top: 2rem;
     margin-left: 0rem;
-    border: 0, 5px solid gray;
+
     border-radius: 1rem;
-    width: 10rem;
+    width: 100%;
     height: 20rem;
 }
 
